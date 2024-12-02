@@ -1,0 +1,436 @@
+  /* Navbar background color */
+  #navbar {
+    background: #060F16;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  /* Style for the navbar brand logo */
+  .navbar-brand img {
+    height: 60px;
+  }
+
+  /* Style for nav links */
+  .navbar-nav .nav-link {
+    margin-right: 15px;
+  }
+
+  /* Style for navbar brand */
+  .navbar-brand {
+    margin-left: 15px; /* Adjust this value as needed */
+  }
+
+  .navbar-toggler-icon span {
+    display: block;
+    width: 24px; /* Width of the icon */
+    height: 2px; /* Height of the lines */
+    background-color: white; /* Color of the lines */
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+
+
+  #an1{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #an1:hover{
+    color:#FF6600;
+  }
+
+  #sp1{
+    color:#FF6600;
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  #sp2{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/* bg section css */
+#bg-section {
+    background-image: url('bgg.jpg'); /* Replace 'your-background-image.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.708); /* Overlay color */
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    text-align: center;
+    color: #ffffff; /* Text color */
+}
+
+#h1 {
+    font-size: 70px; /* Adjust font size */
+    margin-top: 250px;
+    font-weight: bold;
+    color:#FF6600;
+}
+
+#p1, #p2 {
+    font-size: 2em; /* Adjust font size */
+    margin-bottom: 20px;
+}
+
+.btn {
+    color:white;
+    border-color:#FF6600;
+    background-color:#FF6600;
+}
+
+#btn2{
+    border-color:#060F16;
+    background-color: #060F16;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 18px;
+    font-size: 20px;
+    color: #FF6600;
+}
+
+#btn2:hover{
+    color: #ffffff; /* Button text color on hover */
+    background-color:#000000;
+    border: #000000;
+}
+
+.btn:hover {
+    color: #ffffff; /* Button text color on hover */
+    background-color:#FF6600;
+    border: #FF6600;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #h1 {
+        font-size: 40px; /* Decrease font size for smaller screens */
+        margin-top: 80px; /* Adjust margin top accordingly */
+    }
+    #p1, #p2 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content {
+    padding: 30px 0;
+  }
+  
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 34px;
+  }
+  
+  .about .content p {
+    margin-bottom: 0;
+  }
+  
+  .about .content .icon-box {
+    margin-top: 25px;
+  }
+  
+  .about .content .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 10px 60px;
+  }
+  
+  .about .content .icon-box i {
+    font-size: 48px;
+    float: left;
+    color:#FF6600;
+  }
+  
+  .about .content .icon-box p {
+    font-size: 15px;
+    color: #060F16;
+    margin-left: 80px;
+  }
+  
+  .about .image {
+    background: url("about.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+  }
+  
+  @media (max-width: 991px) {
+    .about .image {
+      text-align: center;
+    }
+  
+    .about .image img {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 667px) {
+    .about .image img {
+      max-width: 100%;
+    }
+  }
+  
+  #text{
+    margin-left: 30px;
+  }
+
+  h4{
+   padding-left: 20px;
+  }
+
+  #h3-1{
+   color: #060F16;
+  }
+  
+
+
+
+  /*** Footer ***/
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: var(--secondary);
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--secondary);
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  color: var(--primary);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
+
+.footer .copyright a:hover {
+  color: var(--primary);
+}
+
+#div1{
+  background-color: #060F16;
+}
+
+#a2{
+  color: azure;
+  margin-left: 10px;
+}
+
+#a3{
+  color:#FF6600;
+}
+
+#a4 {
+  background-color: transparent;
+  border: transparent;
+}
+#a4:hover{
+  color:#FF6600;
+  text-decoration: none;
+}
+
+#a5{
+  color: white;
+} 
+#a5:hover{
+  color: #FF6600;
+}
+
+#a6{
+  color: white;
+  margin-left: 10px;
+}
+#a6:hover{
+  color: #FF6600;
+}
+
+#a7{
+  color: white;
+  margin-left: 10px;
+}
+#a7:hover{
+  color: #FF6600;
+}
+
+#a8{
+  color: white;
+  margin-left: 10px;
+}
+#a8:hover{
+  color: #FF6600;
+}
+
+#pe{
+  color: #868686;
+}
+
+
+
+/*** Service ***/
+.service-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+  border: 1px solid transparent;
+  transition: .5s;
+}
+
+.service-item:hover {
+  margin-top: -10px;
+  box-shadow: none;
+  border: 1px solid #DEE2E6;
+}
+
+#h4-s{
+  color: #FF6600;
+  font-weight: bold;
+}
+
+#We{
+  color: #060F16;
+  font-weight: bold;
+}
+
+#Ser{
+  color: #060F16;
+  text-decoration: none;
+}
+
+#Serr{
+  font-weight: bold;
+}
+
+#clr{
+  clear: both;
+}
+
+
+/*--------------------------------------------------------------
+# Call To Action Section
+--------------------------------------------------------------*/
+.call-to-action {
+  padding: 80px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+
+.call-to-action img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.call-to-action:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.call-to-action .container {
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--default-color);
+}
+
+.call-to-action p {
+  color: var(--default-color);
+}
+
+.call-to-action .cta-btn {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid var(--default-color);
+  color: var(--default-color);
+}
+
+.call-to-action .cta-btn:hover {
+  background: var(--accent-color);
+  color: var(--background-color);
+  border: 2px solid var(--accent-color);
+}
+
+#h2-text{
+  color: white;
+}
+
+#ctn{
+  width: 165px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #df5900;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+#ctn:hover{
+  background-color:#FF6600;
+}
+
+
+
+
+
+
+
+
+
